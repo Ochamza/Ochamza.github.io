@@ -1,0 +1,72 @@
+html{
+    background-image: linear-gradient(to right,white,rgb(130, 130, 238));
+}
+body{
+
+    display: grid;
+    grid-template-columns:1fr 6fr ;
+    grid-template-areas:"head head"
+                        "aside section"
+                        "footer footer" ;
+ 
+}
+#image-livre{
+    height: 150px;
+    width: auto;
+    grid-area: image-livre;
+}
+#head{
+    grid-area:head ;
+    display: grid;
+    grid-template-columns:max-content  ;
+    grid-template-areas: "image-livre title"
+                          " . toolbar "
+                        ;
+    margin-bottom: 20px
+}
+ 
+
+#title{
+   grid-area: title;
+   padding-left: 10%;
+}
+#toolbar{
+
+    grid-area: toolbar;
+    padding-left: 20%;
+}
+#section{
+    grid-area: section;
+    display: grid;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: 100px;
+
+}
+.button{
+    border: 1px violet solid;
+    background-color: violet;
+    size: 20px;
+    padding: 10px ;
+    border-radius: 10px;
+
+
+}
+.button:hover{
+
+    background-color: rgb(235, 35, 235);
+    color: wheat;
+    box-shadow:2px 2px 2px 2px  rgb(137, 57, 190);
+}
+.button:active{
+
+    box-shadow: inset 3px 3px 3px 3px rgb(231, 85, 224);
+}
+#footer{
+    grid-area: footer;
+}
+#aside{
+    grid-area: aside;
+    border-right: blue 1px solid;
+    margin-top: 100px;
+}
