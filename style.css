@@ -71,7 +71,7 @@ body{
     border-right: blue 1px solid;
     margin-top: 100px;
 }
-@media(max-width:800px){
+@media(max-width:1200px){
     body{
         grid-template-areas:"head head"
                         "section section"
