@@ -44,23 +44,24 @@ body{
 
 }
 .button{
-    border: 1px violet solid;
-    background-color: violet;
+    border: 1px rgb(117, 145, 238) solid;
+    background-color: rgb(98, 144, 230);
     size: 20px;
     padding: 10px ;
     border-radius: 10px;
 
 
+
 }
 .button:hover{
 
-    background-color: rgb(235, 35, 235);
+     background-color: rgb(63, 54, 189);
     color: wheat;
-    box-shadow:2px 2px 2px 2px  rgb(137, 57, 190);
+    box-shadow:2px 2px 2px 2px  rgb(133, 3, 219);
 }
 .button:active{
 
-    box-shadow: inset 3px 3px 3px 3px rgb(231, 85, 224);
+     box-shadow: inset 3px 3px 3px 3px rgb(70, 206, 176);
 }
 #footer{
     grid-area: footer;
@@ -69,4 +70,13 @@ body{
     grid-area: aside;
     border-right: blue 1px solid;
     margin-top: 100px;
+}
+@media(max-width:600px){
+    body{
+        grid-template-areas:"head head"
+                        "section section"
+                        "aside  aside"
+                        "footer footer" 
+                       ;
+    }
 }
