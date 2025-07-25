@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medcare – Bienvenue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #38b2ac, #3182ce);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      animation: fadeIn 1s ease;
+    }
+    .paragraphe{
+
+
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5em 2em;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 150px;       /* Bigger on desktop */
+      margin-right: 35px;
+      transition: height 0.3s ease;
+    }
+
+    .logo h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #f0f0f0;
+      text-align: right;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4em 2em;
+    }
+
+    .content-box {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2em 3em;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    main h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    main p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    .contact {
+      margin-top: 0.5em;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #e6fffa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .socials {
+      margin-top: 1em;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .logo img {
+        height: 100px; /* Medium screens */
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+      }
+      .tagline {
+        text-align: left;
+      }
+      main h2 {
+        font-size: 1.7rem;
+      }
+      main p {
+        font-size: 1.1rem;
+      }
+      .content-box {
+        padding: 1.5em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        justify-content: center;
+        width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8em;
+        padding: 1em;
+      }
+
+      .logo img {
+        
+        height: 150px;    /* Mobile */
+        margin-right: 10px;
+      }
+
+      .logo h1 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .tagline {
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+       <div class="logo">
+      <img src="logo.png" alt="Logo Medcare" />
+       </div>
+    <div class="tagline">
+    <h1 style="color: #0A2342; font-family: 'Open Sans'"> Le soin, la qualité,pour votre bien-être.</h1> 
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2 style="color:#012622">Produits médicaux et paramédicaux certifiés & garantis</h2>
+      <p class="paragraphe" style="color:#0A2342">
+        Vente et Distribution de Tous les Produits Médicaux et Paramédicaux. <br>
+      </p>
+      <p style="color:#005757 ">
+        Nous nous engageons à vous fournir des solutions fiables, sûres, et de haute qualité pour votre santé, votre bien-être et celui de vos patients.
+      </p>
+    </div>
+    <p style="color:#005757 ; margin-top: 20px;">
+      <strong>Version complète du site web bientôt disponible. 😊</strong>
+    </p>
+  </main>
+
+  <footer>
+    <strong>Contactez-nous</strong>
+    <div class="contact">
+      <p>📞 <a >07 08 02 62 90</a></p>
+      <p>📧 <a href="mailto:contact@medcare.ma">contact@medcare.ma</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
